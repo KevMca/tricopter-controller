@@ -265,6 +265,7 @@ void loop()
   leftESC.write(left);
   rightESC.write(right);
   tailServo.write(yawServo);
+  //tailServo.write(Serial.parseInt());
 
   delay(2);
 
@@ -272,7 +273,7 @@ void loop()
   /* WARNING: Each print causes a significant delay ~10ms which 
               throws off the PID integral and derivative controllers
   */
-  //Serial.print(" compy: "); Serial.println(compy);
+  //Serial.print(" compy: "); Serial.println(yawServo);
   //Serial.print(" compx: "); Serial.print(compx);
   //Serial.print(" dt: "); Serial.println(dt*1000);
   //Serial.print(" tail: "); Serial.println(tail);
